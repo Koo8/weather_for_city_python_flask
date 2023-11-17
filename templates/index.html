@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Conditions</title>
+    <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet" />
+</head>
+<body>
+    <h2>Get Weather Conditions</h2>
+    <form action="/weather">
+        <input type="text" id="city" name="city" placeholder="enter a city">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
